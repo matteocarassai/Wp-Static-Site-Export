@@ -1,0 +1,78 @@
+/* WP Static Exporter Admin Styles */
+
+.wp-static-exporter-wrap .exporter-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.wp-static-exporter-wrap .exporter-logo {
+    max-width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.wp-static-exporter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 30px; /* More space before generate button */
+    border-bottom: 1px solid #ddd; /* Separator */
+    padding-bottom: 20px; /* Space below options */
+}
+
+.wp-static-exporter-option-box {
+    border: 1px solid #ccd0d4;
+    padding: 15px 20px; /* More padding */
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    flex: 1; /* Allow boxes to grow */
+    min-width: 280px; /* Minimum width before wrapping */
+    box-sizing: border-box; /* Include padding/border in width */
+}
+
+.wp-static-exporter-option-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.wp-static-exporter-option-box p {
+    margin-top: 0;
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+.wp-static-exporter-option-box label {
+    display: block; /* Ensure label takes full width */
+    margin-bottom: 5px;
+}
+
+.wp-static-exporter-option-box small {
+    color: #666;
+    display: block; /* Ensure small text is on its own line */
+    margin-top: -5px; /* Adjust spacing */
+    margin-bottom: 10px;
+}
+
+/* Style for the indented email input */
+.wp-static-exporter-option-box .form-recipient-options {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #eee;
+}
+.wp-static-exporter-option-box .form-recipient-options label {
+    margin-bottom: 3px;
+}
+.wp-static-exporter-option-box .form-recipient-options input[type="email"] {
+    margin-bottom: 5px;
+    width: 90%; /* Adjust width */
+}
+
+/* Ensure buttons in table actions don't wrap unnecessarily */
+#wp-static-exporter-exports-table td .button {
+    margin-right: 5px;
+    margin-bottom: 3px; /* Prevent vertical stacking on small screens */
+}
